@@ -1,6 +1,12 @@
+# cat-icecream
+
 [![Build Status](https://travis-ci.org/BillMills/cat-icecream.svg?branch=master)](https://travis-ci.org/BillMills/cat-icecream)
 
-# cat-icecream
+#### Release History
+
+Version | DOI
+--------|-----
+0.1.0   | [![DOI](https://zenodo.org/badge/3877/BillMills/cat-icecream.svg)](https://zenodo.org/badge/latestdoi/3877/BillMills/cat-icecream)
 
 ## Introduction
 
