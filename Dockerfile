@@ -1,6 +1,6 @@
 FROM continuumio/miniconda:latest
 
-# set up conda and apt-get
+# set up conda
 RUN conda config --set always_yes yes --set changeps1 no
 RUN conda update -q conda
 
