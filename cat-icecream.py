@@ -1,4 +1,6 @@
 import pandas
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot
 
 def getAges(color, flavor, data):
@@ -26,8 +28,6 @@ for i, flave in enumerate(icecream):
         matplotlib.pyplot.xlabel('Age')
         matplotlib.pyplot.ylabel('Popularity')
 
-
-
-matplotlib.pyplot.show()
+matplotlib.pyplot.savefig('cat-icecream.png')
  
 
