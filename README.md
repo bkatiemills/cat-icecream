@@ -8,7 +8,7 @@ This repository contains the analysis code used to produce the analysis for [our
 
 ![cat-icecream](img/cat-icecream.png)
 
-As the figure illustrates, cats preferring chocolate and vanilla ice cream at roughly constant rates throughout their lives, but among fruit-flavored ice creams, evidence exists to suggest preferences shift from strawberry to lemon as cats age. No compelling evidence for a correlation between coat and flavor preference is found.
+As the figure illustrates, cats prefer chocolate and vanilla ice cream at roughly constant rates throughout their lives, but among fruit-flavored ice creams, evidence exists to suggest preferences shift from strawberry to lemon as cats age. No compelling evidence for a correlation between coat and flavor preference is found.
 
 ## Other Resources
 
@@ -19,7 +19,7 @@ In addition to the code in this repo, this cat-icecream analysis relies on sever
 
 ## Running cat-icecream
 
-In order to reproduce this analysis, please follow the following steps; if anything doesn't work, please [open an issue](), and we will help clarify.
+In order to reproduce this analysis, please follow the following steps; if anything doesn't work, please [open an issue](https://github.com/BillMills/cat-icecream/issues), and we will help clarify.
 
 ### Software Prerequisites
 
@@ -32,31 +32,31 @@ Once git and Docker are installed and functioning, follow these steps to reprodu
  - Pull the Docker image from dockerhub: `docker pull billmills/cat-icecream`. Note you may have to start your Docker environment to do this; Docker provides [tutorials](https://docs.docker.com/mac/) on basic Docker usage for new users.
  - [Download the data](https://ndownloader.figshare.com/files/3639051) and save it as `data/cat-data.csv`.
  - Launch your Docker container from within the `cat-icecream` directory, and mount that directory within your container:
- ```
- cd cat-icecream
- docker run -v $PWD:/cat-icecream -i -t billmills/cat-icecream /bin/bash 
- ```
+```
+cd cat-icecream
+docker run -v $PWD:/cat-icecream -i -t billmills/cat-icecream /bin/bash 
+```
  - You're now inside the Docker container and ready to run; to run the script:
- ```
- cd /cat-icecream
- python cat-icecream.py
- ```
+```
+cd /cat-icecream
+python cat-icecream.py
+```
  and `img/cat-icecream.png` will be re-generated. Or, to run the tests, also from the `/cat-icecream` directory:
- ```
- nosetests tests/*.py
- ```
+```
+nosetests tests/*.py
+```
 
 ## Programmatic Logic
 
 cat-icecream follows a simple programmatic flow:
 
-![flow](img/cat-icecream-flow.png)
+![flow](img/cat-icecream-logic.png)
 
 Data in `data/cat-data.csv` is ingested by pandas into a dataframe, and the helper function `getAges` extracts lists of ages matching a specified color and flavor preference. matplotlib then generates the final histograms of these lists of ages.
 
 ## Contributing
 
-Contributions to this analysis are very welcome! To begin with, please go through the steps in the 'Running cat-icecream' section above, so you're comfortable using all the bits and pieces. Then, if you would like to suggest a change or update to the project, please follow these steps:
+Contributions to this analysis are very welcome! To begin with, please go through the steps in the [Running cat-icecream](https://github.com/BillMills/cat-icecream#running-cat-icecream) section above, so you're comfortable using all the bits and pieces. Then, if you would like to suggest a change or update to the project, please follow these steps:
 
  - Open an issue to discuss your ideas with us.
  - Please limit each pull request to less than 500 lines.
