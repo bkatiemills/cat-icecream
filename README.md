@@ -32,6 +32,8 @@ In order to reproduce this analysis, please follow the following steps; if anyth
  - [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) (for cloning this repository), or alternatively, download the zipped code by following the DOI links above.
  - [Docker](https://www.docker.com/), for managing dependencies. Alternatively, see `Dockerfile` in this repo for a description of the dependencies found in our Docker image; *use of the project's Docker image is highly recommended rather than attempting to install dependencies natively*.
 
+### Setup & Execution
+
 Once git and Docker are installed and functioning, follow these steps to reproduce the analysis:
 
  - Clone this repository to your computer: `git clone https://github.com/BillMills/cat-icecream.git`. Or, unzip the zipped code archive you can download by following the DOI links above.
