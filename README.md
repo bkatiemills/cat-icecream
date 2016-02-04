@@ -6,7 +6,7 @@
 
 Version | DOI
 --------|-----
-0.1.0   | [![DOI](https://zenodo.org/badge/3877/BillMills/cat-icecream.svg)](https://zenodo.org/badge/latestdoi/3877/BillMills/cat-icecream)
+0.1.0   | [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.43100.svg)](http://dx.doi.org/10.5281/zenodo.43100)
 
 ## Introduction
 
